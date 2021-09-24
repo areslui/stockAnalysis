@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import os
-from StockModel import StockModel as SM
+import StockModel as SM
 
 app = Flask(__name__)
 
@@ -8,8 +8,8 @@ app = Flask(__name__)
 # determin which checbox has checked
 
 # get table data
-model = SM()
-tableData, imageName = model.getStockData(app)
+# model = SM()
+tableData, imageName = SM.getStockData(app)
 
 
 @app.route("/")
