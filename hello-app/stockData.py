@@ -7,7 +7,7 @@ import os
 # import numpy as np
 
 IMAGE_FOLDER = os.path.join('static', 'images')
-
+# print('image folder' + IMAGE_FOLDER)
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = IMAGE_FOLDER
 
