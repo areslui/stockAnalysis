@@ -18,7 +18,6 @@ stockData60 = stockData.rolling(60, min_periods=1).mean()
 plt.plot(stockData["2021"]["Close"])
 plt.plot(stockData60["2021"]["Close"])
 
-# Figures out the absolute path for you in case your working directory moves around.
 my_path = os.path.dirname(os.path.abspath(__file__)) + '/static/images/'
 my_file = 'stockFigure.png'
 plt.savefig(os.path.join(my_path, my_file))
