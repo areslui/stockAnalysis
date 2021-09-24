@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-</head>
-<body>
+  </head>
 
-{% for table in tables %}
-            {{titles[loop.index]}}
-            {{ table|safe }}
-{% endfor %}
+  <body>
+    {% for table in tables %} {{titles[loop.index]}} {{ table|safe }} {% endfor
+    %}
 
-<img src="{{ user_image }}"/>
-</body>
+    <img src="{{ user_image }}" />
+  </body>
 </html>
