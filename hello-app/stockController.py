@@ -4,11 +4,10 @@ import StockModel as SM
 
 app = Flask(__name__)
 
-# preparing checbox
-# determin which checbox has checked
+# preparing checkbox
+# determin which checkbox has checked
 
 # get table data
-# model = SM()
 tableData, imageName = SM.getStockData(app)
 
 

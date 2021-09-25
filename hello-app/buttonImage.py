@@ -1,15 +1,17 @@
-from flask import Flask
-from flask.templating import render_template
+# from flask import Flask
+# from flask.templating import render_template
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
-@app.route("/")
-def hello():
-    return render_template("buttonImage.html")
 
-@app.route("/images")
-def get_img():
-    return "airPlane.jpg"
+# @app.route("/")
+# def hello():
+#     return render_template("buttonImage.html")
+
+
+# @app.route("/images")
+# def get_img():
+#     return "airPlane.jpg"
 
 # app.add_url_rule("/", view_func=hello)
 # app.add_url_rule("/images", view_func=get_img)

@@ -3,11 +3,6 @@ import matplotlib.pyplot as plt
 import os
 
 
-# class StockModel:
-
-# def __init__(self) -> None:
-#     pass
-
 def getStockData(flask):
     # get data
     stockData = data.DataReader(
