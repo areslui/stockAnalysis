@@ -19,6 +19,8 @@ def html_table():
 
     if request.method == 'POST':
         print('button pressed')
+        checked = request.form.get('test', default=False, type=bool)
+        print('checked', checked)
         if request.form.get('proceed') == 'proceed':
             print('Button ID: ', request.form.get('proceed'))
             tableData, imageName = SM.getStockData(app)

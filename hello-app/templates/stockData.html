@@ -6,8 +6,10 @@
   </head>
 
   <body>
-    <form method="post" action="/">
-      <input type="submit" value="proceed" name="proceed" />
+    <form method="POST" action="/">
+      <input type="checkbox" name="test" value="true" />
+
+      <input type="submit" name="proceed" value="proceed" />
     </form>
     {% for table in tables %} {{titles[loop.index]}} {{ table|safe }} {% endfor
     %}
