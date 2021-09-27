@@ -6,6 +6,9 @@
   </head>
 
   <body>
+    <form method="post" action="/">
+      <input type="submit" value="proceed" name="proceed" />
+    </form>
     {% for table in tables %} {{titles[loop.index]}} {{ table|safe }} {% endfor
     %}
 

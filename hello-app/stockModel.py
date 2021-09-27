@@ -1,6 +1,8 @@
 from pandas_datareader import data
-import matplotlib.pyplot as plt
 import os
+import matplotlib
+import matplotlib.pyplot as plt
+matplotlib.use('Agg')
 
 
 def getStockData(flask):
